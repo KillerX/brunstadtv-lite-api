@@ -1,0 +1,11 @@
+version: 1
+
+packages:
+  - name: "sqlc"
+    path: "./src/sqlc"
+    engine: "sqlite"
+    schema: "../brunstadtv/backend/export/sqlc/migrations"
+    queries: "./queries"
+    emit_json_tags: true
+    emit_db_tags: true
+    json_tags_case_style: camel
